@@ -379,7 +379,7 @@ body.dark .riwayat-table th{
     <div class="topbar">
         <div class="logo-area">
             <img src="{{ asset('assets/images/logo.png') }}">
-            <h1>Ruang Pulih bersama</h1>
+            <h1>Ruang Pulih</h1>
         </div>
 
         <div class="top-menu">
