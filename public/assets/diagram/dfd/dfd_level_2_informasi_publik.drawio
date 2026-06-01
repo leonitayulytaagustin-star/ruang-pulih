@@ -1,0 +1,33 @@
+<mxfile host="Electron" modified="2026-05-24T21:00:00.000Z" agent="5.0" version="21.6.8" type="device">
+  <diagram id="DFD-L2-Informasi" name="DFD Level 2 - Proses 7.0 Info Publik">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="E_Pengunjung" value="PENGUNJUNG / USER" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontWeight=bold;" vertex="1" parent="1"><mxGeometry x="80" y="240" width="140" height="60" as="geometry" /></mxCell>
+
+        <mxCell id="P7_1" value="7.1&lt;br&gt;Akses Beranda&lt;br&gt;(Landing Page)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="40" width="120" height="120" as="geometry" /></mxCell>
+        <mxCell id="P7_2" value="7.2&lt;br&gt;Akses Profil&lt;br&gt;(Tentang Kami)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="210" width="120" height="120" as="geometry" /></mxCell>
+        <mxCell id="P7_3" value="7.3&lt;br&gt;Akses Panduan&lt;br&gt;Bantuan &amp; Darurat" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="380" width="120" height="120" as="geometry" /></mxCell>
+        
+        <!-- D7 Data Store -->
+        <mxCell id="D7" value="D7: Direktori Sistem (Static Views)" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="680" y="255" width="200" height="30" as="geometry" /></mxCell>
+
+        <mxCell id="F1" value="Request Halaman Utama" style="endArrow=classic;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_Pengunjung" target="P7_1"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="320" y="255"/><mxPoint x="320" y="100"/></Array></mxGeometry></mxCell>
+        <mxCell id="F2" value="Request Halaman About" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_Pengunjung" target="P7_2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="F3" value="Request Menu Bantuan (Darurat, Keamanan, Pusat)" style="endArrow=classic;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_Pengunjung" target="P7_3"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="320" y="285"/><mxPoint x="320" y="440"/></Array></mxGeometry></mxCell>
+
+        <!-- Fetch from Static Views -->
+        <mxCell id="S1" value="Load View Content" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="P7_1" target="D7"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="780" y="100"/></Array></mxGeometry></mxCell>
+        <mxCell id="S2" value="Load View Content" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="P7_2" target="D7"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="S3" value="Load View Content" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="P7_3" target="D7"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="780" y="440"/></Array></mxGeometry></mxCell>
+        
+        <!-- Responses -->
+        <mxCell id="R1" value="Tampilkan Halaman" style="endArrow=classic;html=1;exitX=0;exitY=0.75;entryX=0.5;entryY=0;" edge="1" parent="1" source="P7_1" target="E_Pengunjung"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="150" y="130"/></Array></mxGeometry></mxCell>
+        <mxCell id="R3" value="Tampilkan Halaman" style="endArrow=classic;html=1;exitX=0;exitY=0.25;entryX=0.5;entryY=1;" edge="1" parent="1" source="P7_3" target="E_Pengunjung"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="150" y="410"/></Array></mxGeometry></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
