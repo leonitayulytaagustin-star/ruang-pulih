@@ -1,0 +1,535 @@
+<mxfile host="Electron" modified="2026-05-24T14:00:00.000Z" agent="5.0" version="21.6.8" type="device">
+  <diagram id="Chen-ERD-Exhaustive" name="ERD Chen Lengkap dgn Atribut - Ruang Pulih">
+    <mxGraphModel dx="4000" dy="4000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ========================================== -->
+        <!-- CORE ENTITIES: USER & ROLES                -->
+        <!-- ========================================== -->
+        
+        <!-- TB_USER -->
+        <mxCell id="E_User" value="tb_user" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1500" y="200" width="140" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_U_id" value="&lt;u&gt;id_user&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1200" y="100" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_nama" value="nama_lengkap" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1320" y="80" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_email" value="email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1450" y="60" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_verif" value="email_verified_at" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1560" y="60" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_pass" value="password" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1700" y="80" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_telp" value="nomor_telepon" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1800" y="120" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_jk" value="jenis_kelamin" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1850" y="180" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_role" value="role" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1850" y="240" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_foto" value="foto_profil" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1800" y="300" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_status" value="status_akun" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1680" y="320" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_2fa" value="two_factor_enabled" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1530" y="340" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_2facode" value="two_factor_code" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1390" y="340" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_U_2faexp" value="two_factor_exp" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1250" y="320" width="110" height="40" as="geometry" /></mxCell>
+
+        <!-- Edges for User Attributes -->
+        <mxCell id="L_U_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_id" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_nama" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_email" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_verif" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_pass" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_telp" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_jk" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_8" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_role" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_9" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_foto" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_10" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_status" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_11" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_2fa" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_12" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_2facode" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_U_13" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_U_2faexp" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Role Relationships (ISA) -->
+        <mxCell id="R_ISA" value="ISA" style="triangle;whiteSpace=wrap;html=1;align=center;fillColor=#e1d5e7;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="420" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_ISA" value="" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_User" target="R_ISA"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- TB_ADMIN -->
+        <mxCell id="E_Admin" value="tb_admin" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1"><mxGeometry x="1000" y="550" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_ISA_A" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="R_ISA" target="E_Admin"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1570" y="500"/><mxPoint x="1060" y="500"/></Array></mxGeometry></mxCell>
+        
+        <mxCell id="A_Ad_id" value="&lt;u&gt;id_admin&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="850" y="520" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ad_dibuat" value="dibuat_oleh" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="850" y="600" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_Ad_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ad_id" target="E_Admin"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ad_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ad_dibuat" target="E_Admin"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- TB_PSIKOLOG -->
+        <mxCell id="E_Psikolog" value="tb_psikolog" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="1510" y="550" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_ISA_Ps" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="R_ISA" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        
+        <mxCell id="A_Ps_id" value="&lt;u&gt;id_psikolog&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1350" y="500" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_spesialis" value="spesialisasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1340" y="560" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_sipa" value="nomor_sipa" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1360" y="620" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_pend" value="pendidikan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1460" y="660" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_peng" value="pengalaman" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1580" y="660" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_bio" value="bio" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1680" y="620" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_status" value="status_psikolog" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1690" y="560" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ps_buat" value="dibuat_oleh" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1660" y="500" width="100" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_Ps_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_id" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_spesialis" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_sipa" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_pend" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_peng" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_bio" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_status" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ps_8" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ps_buat" target="E_Psikolog"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+
+        <!-- TB_PASIEN -->
+        <mxCell id="E_Pasien" value="tb_pasien" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="2000" y="550" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_ISA_Pa" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="R_ISA" target="E_Pasien"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1570" y="500"/><mxPoint x="2060" y="500"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="A_Pa_id" value="&lt;u&gt;id_pasien&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2150" y="490" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pa_umur" value="umur" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2180" y="550" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pa_tgl" value="tanggal_daftar" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2150" y="610" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pa_alamat" value="alamat" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2040" y="650" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pa_status" value="status_pasien" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1900" y="630" width="100" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_Pa_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pa_id" target="E_Pasien"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pa_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pa_umur" target="E_Pasien"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pa_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pa_tgl" target="E_Pasien"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pa_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pa_alamat" target="E_Pasien"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pa_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pa_status" target="E_Pasien"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+
+        <!-- ========================================== -->
+        <!-- EDUKASI                                    -->
+        <!-- ========================================== -->
+        <mxCell id="E_KatEdukasi" value="tb_kategori_edukasi" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1"><mxGeometry x="200" y="300" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_KE_id" value="&lt;u&gt;id_kategori&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="50" y="240" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KE_nama" value="nama_kategori" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="50" y="310" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KE_desc" value="deskripsi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="90" y="380" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KE_status" value="status" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="200" y="400" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_KE_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KE_id" target="E_KatEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_KE_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KE_nama" target="E_KatEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_KE_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KE_desc" target="E_KatEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_KE_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KE_status" target="E_KatEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Kat_Konten" value="Memiliki" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="380" y="300" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_KK1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_KatEdukasi" target="R_Kat_Konten"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_KontenEdukasi" value="tb_konten_edukasi" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1"><mxGeometry x="550" y="300" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_KK2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Kat_Konten" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="A_KntE_id" value="&lt;u&gt;id_konten&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="400" y="160" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_tipe" value="tipe_konten" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="500" y="130" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_judul" value="judul_konten" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="620" y="130" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_slug" value="slug" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="720" y="170" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_isi" value="isi_artikel" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="760" y="230" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_url" value="url_video" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="760" y="290" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_dur" value="durasi_video" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="750" y="350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_thumb" value="thumbnail" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="680" y="400" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_stat" value="status" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="580" y="420" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_KntE_tgl" value="tanggal_publish" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="450" y="410" width="110" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_Kn_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_id" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_tipe" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_judul" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_slug" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_isi" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_url" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_dur" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_8" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_thumb" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_9" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_stat" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kn_10" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_KntE_tgl" target="E_KontenEdukasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_User_Konten" value="Menulis" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="880" y="200" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_UK1" value="N" style="endArrow=none;html=1;exitX=1;exitY=0;" edge="1" parent="1" source="E_KontenEdukasi" target="R_User_Konten"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="680" y="230"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_UK2" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="R_User_Konten" target="E_User"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========================================== -->
+        <!-- SKRINING                                   -->
+        <!-- ========================================== -->
+        <mxCell id="E_JenisSkrining" value="tb_jenis_skrining" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="800" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_JS_id" value="&lt;u&gt;id_jenis_skrining&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="200" y="700" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_nama" value="nama_skrining" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="340" y="670" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_penyakit" value="jenis_penyakit" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="460" y="680" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_desc" value="deskripsi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="560" y="720" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_gb" value="gambar" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="580" y="780" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_st" value="status" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="580" y="840" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_jml" value="jumlah_pertanyaan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="520" y="890" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JS_pan" value="panduan_pengelolaan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="360" y="910" width="140" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_JS_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_id" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_nama" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_penyakit" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_desc" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_gb" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_st" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_jml" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JS_8" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JS_pan" target="E_JenisSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- Admin Creates Skrining -->
+        <mxCell id="R_Admin_Skrining" value="Membuat" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="700" y="700" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_AS1" value="1" style="endArrow=none;html=1;exitX=0;exitY=0.75;" edge="1" parent="1" source="E_User" target="R_Admin_Skrining"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="750" y="245"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_AS2" value="N" style="endArrow=none;html=1;exitX=1;exitY=0.25;" edge="1" parent="1" source="E_JenisSkrining" target="R_Admin_Skrining"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="750" y="815"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="E_PertanyaanSkrining" value="tb_pertanyaan_skrining" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="1050" width="150" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_PSk_id" value="&lt;u&gt;id_pertanyaan&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="220" y="990" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PSk_tanya" value="pertanyaan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="210" y="1060" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PSk_urut" value="urutan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="250" y="1120" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PSk_st" value="status" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="350" y="1150" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_PSk_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PSk_id" target="E_PertanyaanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PSk_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PSk_tanya" target="E_PertanyaanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PSk_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PSk_urut" target="E_PertanyaanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PSk_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PSk_st" target="E_PertanyaanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Jenis_Tanya" value="Punya" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="425" y="930" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_JT1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_JenisSkrining" target="R_Jenis_Tanya"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JT2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Jenis_Tanya" target="E_PertanyaanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_JawabanSkrining" value="tb_jawaban_skrining" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="1300" width="150" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_Jwk_id" value="&lt;u&gt;id_jawaban&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="220" y="1250" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jwk_teks" value="teks_jawaban" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="210" y="1310" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jwk_nil" value="nilai_jawaban" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="260" y="1380" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jwk_urt" value="urutan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="380" y="1410" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_Jwk_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jwk_id" target="E_JawabanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jwk_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jwk_teks" target="E_JawabanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jwk_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jwk_nil" target="E_JawabanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jwk_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jwk_urt" target="E_JawabanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Tanya_Jawab" value="Pilihan" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="425" y="1180" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_TJ1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_PertanyaanSkrining" target="R_Tanya_Jawab"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_TJ2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Tanya_Jawab" target="E_JawabanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_PendaftaranSkrining" value="tb_pendaftaran_skrining" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1450" y="800" width="160" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_id" value="&lt;u&gt;id_pendaftaran_skrining&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1190" y="690" width="160" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_nama" value="nama_lengkap" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1360" y="680" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_umur" value="umur" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1490" y="680" width="70" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_jk" value="jenis_kelamin" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1580" y="690" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_em" value="email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1670" y="730" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_pg" value="pernah_gangguan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1700" y="780" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_jg" value="jenis_gangguan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1700" y="840" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_sk" value="sedang_konsumsi_obat" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1650" y="890" width="150" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_no" value="nama_obat_dosis" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1500" y="910" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_rp" value="riwayat_penyakit_fisik" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1330" y="910" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PdS_ct" value="catatan_tambahan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1220" y="860" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_id" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_nama" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_umur" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_jk" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_em" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_pg" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_jg" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_8" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_sk" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_9" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_no" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_10" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_rp" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PdS_11" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PdS_ct" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_DaftarS" value="Mendaftar" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1750" y="800" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PDS1" value="1" style="endArrow=none;html=1;exitX=0.5;exitY=1;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_DaftarS"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2060" y="830"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PDS2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_DaftarS" target="E_PendaftaranSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_HasilSkrining" value="tb_hasil_skrining" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="900" y="800" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_HS_id" value="&lt;u&gt;id_hasil_skrining&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="720" y="750" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_HS_ts" value="total_skor" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="780" y="810" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_HS_kh" value="kategori_hasil" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="790" y="870" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_HS_ket" value="keterangan_hasil" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="910" y="900" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_HS_tgl" value="tanggal_skrining" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1050" y="880" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_HS_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_HS_id" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_HS_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_HS_ts" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_HS_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_HS_kh" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_HS_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_HS_ket" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_HS_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_HS_tgl" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_Hasil" value="Mendapat" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1200" y="800" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PH1" value="1" style="endArrow=none;html=1;exitX=0;exitY=0.75;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_Hasil"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1250" y="595"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PH2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_Hasil" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Jenis_Hasil" value="Menghasilkan" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="640" y="800" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_JH1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_JenisSkrining" target="R_Jenis_Hasil"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JH2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Jenis_Hasil" target="E_HasilSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_DetailHasil" value="tb_detail_hasil_skrining" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="890" y="1050" width="150" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_DH_id" value="&lt;u&gt;id_detail_hasil&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="720" y="1030" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_DH_nil" value="nilai_jawaban" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="770" y="1110" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_DH_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_DH_id" target="E_DetailHasil"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_DH_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_DH_nil" target="E_DetailHasil"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Hasil_Detail" value="Berisi" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="915" y="930" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_HD1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_HasilSkrining" target="R_Hasil_Detail"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_HD2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Hasil_Detail" target="E_DetailHasil"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- FK Associations for Detail Hasil -->
+        <mxCell id="R_Detail_Tanya" value="" style="endArrow=none;html=1;dashed=1;exitX=0;exitY=0.25;entryX=1;entryY=0.5;" edge="1" parent="1" source="E_DetailHasil" target="E_PertanyaanSkrining"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="R_Detail_Jawab" value="" style="endArrow=none;html=1;dashed=1;exitX=0;exitY=0.75;entryX=1;entryY=0.5;" edge="1" parent="1" source="E_DetailHasil" target="E_JawabanSkrining"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="750" y="1095"/><mxPoint x="750" y="1330"/></Array></mxGeometry></mxCell>
+
+        <!-- ========================================== -->
+        <!-- KONSULTASI                                 -->
+        <!-- ========================================== -->
+        
+        <mxCell id="E_PendaftaranKonsul" value="tb_pendaftaran_konsultasi" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="2700" y="800" width="170" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_id" value="&lt;u&gt;id_pendaftaran_konsul&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2500" y="700" width="150" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_nama" value="nama_lengkap" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2670" y="680" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_umur" value="umur" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2810" y="680" width="70" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_jk" value="jenis_kelamin" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2900" y="710" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_em" value="email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2950" y="770" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_keluhan" value="keluhan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2940" y="830" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_urg" value="tingkat_urgensi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2880" y="880" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_syr" value="persetujuan_syarat" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2740" y="910" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PKn_stat" value="status_pendaftaran" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2590" y="890" width="140" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_PKn_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_id" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_nama" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_umur" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_jk" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_em" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_keluhan" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_urg" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_8" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_syr" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PKn_9" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PKn_stat" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_DaftarK" value="Mendaftar" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2350" y="800" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PDK1" value="1" style="endArrow=none;html=1;exitX=1;exitY=0.75;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_DaftarK"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2120" y="830"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PDK2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_DaftarK" target="E_PendaftaranKonsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_Jadwal" value="tb_jadwal_psikolog" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="2700" y="550" width="140" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_Jdw_id" value="&lt;u&gt;id_jadwal&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2500" y="500" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jdw_tgl" value="tanggal" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2620" y="470" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jdw_jm" value="jam_mulai" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2720" y="450" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jdw_js" value="jam_selesai" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2830" y="470" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Jdw_st" value="status_jadwal" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2900" y="520" width="100" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_Jdw_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jdw_id" target="E_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jdw_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jdw_tgl" target="E_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jdw_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jdw_jm" target="E_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jdw_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jdw_js" target="E_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Jdw_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Jdw_st" target="E_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Psi_Jadwal" value="Menentukan" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2350" y="550" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PsJ1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Psikolog" target="R_Psi_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PsJ2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Psi_Jadwal" target="E_Jadwal"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_Konsultasi" value="tb_konsultasi" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="2700" y="1050" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_id" value="&lt;u&gt;id_konsultasi&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2500" y="990" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_jns" value="jenis_konsultasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2610" y="940" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_tgl" value="tanggal_konsultasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2740" y="940" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_wm" value="waktu_mulai" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2870" y="980" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_ws" value="waktu_selesai" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2910" y="1040" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_st" value="status_konsultasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2880" y="1110" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Kon_cp" value="catatan_psikolog" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2740" y="1150" width="120" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_Kon_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_id" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kon_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_jns" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kon_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_tgl" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kon_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_wm" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kon_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_ws" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kon_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_st" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Kon_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Kon_cp" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Jadwal_Konsul" value="Dipesan" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2830" y="660" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_JK1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Jadwal" target="R_Jadwal_Konsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JK2" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Jadwal_Konsul" target="E_Konsultasi"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2880" y="1080"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="R_Daftar_Konsul" value="Menjadi" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2715" y="930" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_DK1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_PendaftaranKonsul" target="R_Daftar_Konsul"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_DK2" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Daftar_Konsul" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_Konsul" value="Melibatkan" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2350" y="1050" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PKon1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_Konsul"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2060" y="1080"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PKon2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_Konsul" target="E_Konsultasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Psikolog_Konsul" value="Menangani" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2350" y="1150" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PsKon1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Psikolog" target="R_Psikolog_Konsul"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1570" y="1180"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PsKon2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Psikolog_Konsul" target="E_Konsultasi"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2765" y="1180"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="E_Chat" value="tb_chat_konsultasi" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="2700" y="1300" width="140" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_Ch_id" value="&lt;u&gt;id_chat&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2520" y="1270" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ch_psn" value="pesan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2540" y="1340" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ch_tp" value="tipe_pesan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2640" y="1380" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ch_fl" value="file_lampiran" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2750" y="1390" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ch_wk" value="waktu_kirim" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2860" y="1350" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Ch_sb" value="status_baca" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2900" y="1280" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_Ch_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ch_id" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ch_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ch_psn" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ch_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ch_tp" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ch_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ch_fl" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ch_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ch_wk" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Ch_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Ch_sb" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Konsul_Chat" value="Memiliki" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2720" y="1180" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_KC1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Konsultasi" target="R_Konsul_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_KC2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Konsul_Chat" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_User_Chat" value="Mengirim" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2350" y="1300" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_UC1" value="1" style="endArrow=none;html=1;exitX=0.5;exitY=1;" edge="1" parent="1" source="E_User" target="R_User_Chat"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1160" y="1330"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_UC2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_User_Chat" target="E_Chat"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ========================================== -->
+        <!-- PEMANTAUAN MENTAL & MOOD                   -->
+        <!-- ========================================== -->
+        <mxCell id="E_Pemantauan" value="tb_pemantauan_mental" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1400" y="1600" width="150" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_Pm_id" value="&lt;u&gt;id_pemantauan&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1180" y="1560" width="120" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pm_tgl" value="tanggal_pemantauan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1190" y="1620" width="140" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pm_ts" value="total_skor" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1270" y="1680" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pm_km" value="kondisi_mental" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1390" y="1710" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pm_em" value="emoji_kondisi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1530" y="1700" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_Pm_ket" value="keterangan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1620" y="1640" width="90" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_Pm_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pm_id" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pm_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pm_tgl" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pm_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pm_ts" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pm_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pm_km" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pm_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pm_em" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_Pm_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_Pm_ket" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_Pemantauan" value="Melakukan" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1425" y="1450" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PPm1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_Pemantauan"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1460" y="460"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PPm2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_Pemantauan" target="E_Pemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_PertanyaanPemantauan" value="tb_pertanyaan_pemantauan" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="1800" y="1600" width="170" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_PP_id" value="&lt;u&gt;id_pertanyaan_pem&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1820" y="1510" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PP_tanya" value="pertanyaan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1980" y="1560" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PP_urut" value="urutan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1990" y="1630" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_PP_st" value="status" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1920" y="1680" width="80" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_PP_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PP_id" target="E_PertanyaanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PP_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PP_tanya" target="E_PertanyaanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PP_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PP_urut" target="E_PertanyaanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PP_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_PP_st" target="E_PertanyaanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        
+        <mxCell id="E_JawabanPemantauan" value="tb_jawaban_pemantauan" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="1600" y="1800" width="160" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_JP_id" value="&lt;u&gt;id_jawaban_pem&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1420" y="1780" width="130" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JP_em" value="emoji_jawaban" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1480" y="1860" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_JP_nil" value="nilai_jawaban" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1620" y="1900" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="L_JP_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JP_id" target="E_JawabanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JP_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JP_em" target="E_JawabanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_JP_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_JP_nil" target="E_JawabanPemantauan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        
+        <mxCell id="R_Pemantauan_Jawab" value="Berisi" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1425" y="1700" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PmJ1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_Pemantauan" target="R_Pemantauan_Jawab"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_PmJ2" value="N" style="endArrow=none;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="R_Pemantauan_Jawab" target="E_JawabanPemantauan"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1475" y="1830"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="R_Tanya_Jawab_Pem" value="" style="endArrow=none;html=1;dashed=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="E_JawabanPemantauan" target="E_PertanyaanPemantauan"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1885" y="1830"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="E_MoodHarian" value="tb_mood_harian" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="2000" y="1300" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_MH_id" value="&lt;u&gt;id_mood&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1880" y="1250" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_MH_md" value="mood" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1860" y="1320" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_MH_em" value="emoji_mood" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1930" y="1380" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_MH_ct" value="catatan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2060" y="1400" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_MH_tgl" value="tanggal_mood" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2160" y="1360" width="100" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_MH_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_MH_id" target="E_MoodHarian"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_MH_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_MH_md" target="E_MoodHarian"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_MH_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_MH_em" target="E_MoodHarian"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_MH_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_MH_ct" target="E_MoodHarian"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_MH_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_MH_tgl" target="E_MoodHarian"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_MoodH" value="Mencatat" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1800" y="1150" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PMH1" value="1" style="endArrow=none;html=1;exitX=0;exitY=0.75;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_MoodH"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1400" y="1180"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PMH2" value="N" style="endArrow=none;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="R_Pasien_MoodH" target="E_MoodHarian"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="2060" y="1180"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="E_Ringkasan" value="tb_ringkasan_pasien" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1000" y="1300" width="140" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_RP_id" value="&lt;u&gt;id_ringkasan&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="840" y="1250" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RP_kt" value="kondisi_terakhir" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="810" y="1310" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RP_st" value="skor_terakhir" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="860" y="1370" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RP_p" value="perubahan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="980" y="1400" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RP_pr" value="prioritas" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1080" y="1400" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RP_ket" value="keterangan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1170" y="1360" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RP_tgl" value="tanggal_update" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1180" y="1290" width="110" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_RP_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_id" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RP_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_kt" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RP_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_st" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RP_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_p" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RP_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_pr" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RP_6" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_ket" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RP_7" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RP_tgl" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_Ringkasan" value="Memiliki" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1020" y="1150" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PR1" value="1" style="endArrow=none;html=1;exitX=0.25;exitY=1;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_Ringkasan"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1430" y="1180"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PR2" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_Ringkasan" target="E_Ringkasan"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_RiwayatAkt" value="tb_riwayat_aktivitas_pasien" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1"><mxGeometry x="1150" y="1800" width="170" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_RA_id" value="&lt;u&gt;id_aktivitas&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="960" y="1760" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RA_ja" value="jenis_aktivitas" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="950" y="1830" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RA_ket" value="keterangan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1030" y="1880" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_RA_tgl" value="tanggal_aktivitas" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1150" y="1910" width="120" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_RA_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RA_id" target="E_RiwayatAkt"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RA_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RA_ja" target="E_RiwayatAkt"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RA_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RA_ket" target="E_RiwayatAkt"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_RA_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_RA_tgl" target="E_RiwayatAkt"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Pasien_Riwayat" value="Punya" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1185" y="1700" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_PRw1" value="1" style="endArrow=none;html=1;exitX=0;exitY=1;" edge="1" parent="1" source="E_Pasien" target="R_Pasien_Riwayat"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1400" y="1730"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_PRw2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_Pasien_Riwayat" target="E_RiwayatAkt"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+
+        <!-- ========================================== -->
+        <!-- SUPPORT, FEEDBACK & LOGS                   -->
+        <!-- ========================================== -->
+        
+        <mxCell id="E_Notifikasi" value="tb_notifikasi" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="2200" y="200" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_N_id" value="&lt;u&gt;id_notifikasi&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2060" y="130" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_N_jdl" value="judul_notifikasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2190" y="110" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_N_isi" value="isi_notifikasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2330" y="140" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_N_tp" value="tipe_notifikasi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2380" y="210" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_N_sb" value="status_baca" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2360" y="280" width="100" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_N_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_N_id" target="E_Notifikasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_N_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_N_jdl" target="E_Notifikasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_N_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_N_isi" target="E_Notifikasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_N_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_N_tp" target="E_Notifikasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_N_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_N_sb" target="E_Notifikasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_User_Notif" value="Menerima" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1950" y="200" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_UN1" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="E_User" target="R_User_Notif"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_UN2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_User_Notif" target="E_Notifikasi"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_Laporan" value="tb_laporan_masalah" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="1800" y="-150" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_LM_id" value="&lt;u&gt;id_laporan&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1650" y="-180" width="90" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LM_kat" value="kategori" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1760" y="-230" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LM_jdl" value="judul" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1870" y="-230" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LM_desc" value="deskripsi" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1970" y="-180" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LM_st" value="status_laporan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1980" y="-100" width="110" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_LM_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LM_id" target="E_Laporan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LM_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LM_kat" target="E_Laporan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LM_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LM_jdl" target="E_Laporan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LM_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LM_desc" target="E_Laporan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LM_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LM_st" target="E_Laporan"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_User_Lapor" value="Mengirim" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="1815" y="-10" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_UL1" value="1" style="endArrow=none;html=1;exitX=0.75;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="E_User" target="R_User_Lapor"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1190" y="20"/><mxPoint x="1865" y="20"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_UL2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_User_Lapor" target="E_Laporan"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_Saran" value="tb_saran_masukan" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="2200" y="-150" width="130" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_SM_id" value="&lt;u&gt;id_saran&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2060" y="-180" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_SM_nama" value="nama" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2160" y="-230" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_SM_email" value="email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2280" y="-230" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_SM_psn" value="pesan" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2380" y="-180" width="80" height="40" as="geometry" /></mxCell>
+        
+        <mxCell id="L_SM_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_SM_id" target="E_Saran"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_SM_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_SM_nama" target="E_Saran"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_SM_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_SM_email" target="E_Saran"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_SM_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_SM_psn" target="E_Saran"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_User_Saran" value="Mengirim" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="2215" y="-10" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_US1" value="1" style="endArrow=none;html=1;exitX=1;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="E_User" target="R_User_Saran"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1220" y="20"/><mxPoint x="2265" y="20"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_US2" value="N" style="endArrow=none;html=1;" edge="1" parent="1" source="R_User_Saran" target="E_Saran"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="E_LogAdmin" value="tb_log_aktivitas_admin" style="whiteSpace=wrap;html=1;align=center;fontWeight=bold;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="400" y="200" width="150" height="60" as="geometry" /></mxCell>
+        <mxCell id="A_LA_id" value="&lt;u&gt;id_log&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="260" y="140" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LA_akt" value="aktivitas" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="360" y="100" width="80" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LA_tabel" value="tabel_terkait" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="470" y="100" width="100" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LA_idt" value="id_data_terkait" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="580" y="140" width="110" height="40" as="geometry" /></mxCell>
+        <mxCell id="A_LA_wk" value="waktu_aktivitas" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="590" y="210" width="110" height="40" as="geometry" /></mxCell>
+
+        <mxCell id="L_LA_1" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LA_id" target="E_LogAdmin"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LA_2" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LA_akt" target="E_LogAdmin"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LA_3" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LA_tabel" target="E_LogAdmin"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LA_4" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LA_idt" target="E_LogAdmin"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="L_LA_5" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="A_LA_wk" target="E_LogAdmin"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="R_Admin_Log" value="Dicatat" style="rhombus;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1"><mxGeometry x="610" y="320" width="100" height="60" as="geometry" /></mxCell>
+        <mxCell id="L_AL1" value="1" style="endArrow=none;html=1;exitX=0;exitY=0.25;entryX=0.5;entryY=1;" edge="1" parent="1" source="E_Admin" target="R_Admin_Log"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="660" y="415"/></Array></mxGeometry></mxCell>
+        <mxCell id="L_AL2" value="N" style="endArrow=none;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="R_Admin_Log" target="E_LogAdmin"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
