@@ -1,0 +1,36 @@
+<mxfile host="Electron" modified="2026-05-24T20:15:00.000Z" agent="5.0" version="21.6.8" type="device">
+  <diagram id="DFD-L2-Support" name="DFD Level 2 - Proses 6.0 Support">
+    <mxGraphModel dx="1200" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="E_User" value="USER / PASIEN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontWeight=bold;" vertex="1" parent="1"><mxGeometry x="80" y="160" width="120" height="60" as="geometry" /></mxCell>
+        <mxCell id="E_Admin" value="ADMIN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontWeight=bold;" vertex="1" parent="1"><mxGeometry x="80" y="520" width="120" height="60" as="geometry" /></mxCell>
+
+        <mxCell id="P6_1" value="6.1&lt;br&gt;Kirim Laporan&lt;br&gt;Masalah" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="360" y="60" width="100" height="100" as="geometry" /></mxCell>
+        <mxCell id="P6_2" value="6.2&lt;br&gt;Kirim Saran &amp;&lt;br&gt;Masukan" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="360" y="240" width="100" height="100" as="geometry" /></mxCell>
+        <mxCell id="P6_3" value="6.3&lt;br&gt;Tindaklanjuti&lt;br&gt;Laporan" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="360" y="420" width="100" height="100" as="geometry" /></mxCell>
+        <mxCell id="P6_4" value="6.4&lt;br&gt;Generate Log&lt;br&gt;&amp; Notifikasi" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="360" y="600" width="100" height="100" as="geometry" /></mxCell>
+        <mxCell id="P6_5" value="6.5&lt;br&gt;Akses &amp; Baca&lt;br&gt;Notifikasi" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f5f5f5;" vertex="1" parent="1"><mxGeometry x="360" y="780" width="100" height="100" as="geometry" /></mxCell>
+
+        <mxCell id="D6" value="D6: Database Support (Laporan, Saran, Notif, Log)" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="640" y="365" width="280" height="30" as="geometry" /></mxCell>
+
+        <mxCell id="F1" value="Detail Masalah" style="endArrow=classic;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_User" target="P6_1"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="280" y="175"/><mxPoint x="280" y="110"/></Array></mxGeometry></mxCell>
+        <mxCell id="F2" value="Ide &amp; Kritik" style="endArrow=classic;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_User" target="P6_2"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="280" y="205"/><mxPoint x="280" y="290"/></Array></mxGeometry></mxCell>
+        <mxCell id="F3" value="Update Status Penanganan" style="endArrow=classic;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_Admin" target="P6_3"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="280" y="535"/><mxPoint x="280" y="470"/></Array></mxGeometry></mxCell>
+        <mxCell id="F4" value="Aktivitas Admin" style="endArrow=classic;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_Admin" target="P6_4"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="280" y="565"/><mxPoint x="280" y="650"/></Array></mxGeometry></mxCell>
+        <mxCell id="F5" value="Update Status Baca" style="endArrow=classic;html=1;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="E_User" target="P6_5"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="140" y="830"/></Array></mxGeometry></mxCell>
+        
+        <mxCell id="S1" value="Simpan Laporan" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="P6_1" target="D6"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="780" y="110"/></Array></mxGeometry></mxCell>
+        <mxCell id="S2" value="Simpan Saran" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.25;entryY=0;" edge="1" parent="1" source="P6_2" target="D6"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="710" y="290"/></Array></mxGeometry></mxCell>
+        <mxCell id="S3" value="Ubah Status" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.25;entryY=1;" edge="1" parent="1" source="P6_3" target="D6"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="710" y="470"/></Array></mxGeometry></mxCell>
+        <mxCell id="S4" value="Catat Log &amp; Notif" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="P6_4" target="D6"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="780" y="650"/></Array></mxGeometry></mxCell>
+        <mxCell id="S5" value="Ubah Flag 'Read'" style="endArrow=classic;html=1;exitX=1;exitY=0.5;entryX=0.75;entryY=1;" edge="1" parent="1" source="P6_5" target="D6"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="850" y="830"/></Array></mxGeometry></mxCell>
+
+        <mxCell id="O1" value="Terima Notifikasi Baru" style="endArrow=classic;html=1;exitX=1;exitY=0;entryX=0.5;entryY=0;" edge="1" parent="1" source="D6" target="E_User"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="365"/><mxPoint x="940" y="20"/><mxPoint x="140" y="20"/></Array></mxGeometry></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
