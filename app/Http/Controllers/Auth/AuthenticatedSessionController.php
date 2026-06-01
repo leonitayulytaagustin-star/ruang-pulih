@@ -24,7 +24,24 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-        $request->authenticate();
+        $request->ensureIsNotRateLimited();
+
+        $user = \App\Models\User::where('email', $request->email)->first();
+
+        if ($user && \Illuminate\Support\Facades\Hash::check($request->password, $user->password)) {
+            if ($user->two_factor_enabled) {
+                $request->session()->put('2fa_user_id', $user->id_user);
+                $request->session()->put('2fa_remember', $request->boolean('remember'));
+
+                return redirect()->route('two-factor.login');
+            }
+
+            Auth::login($user, $request->boolean('remember'));
+            $request->session()->regenerate();
+            return redirect()->intended(route('dashboard', absolute: false));
+        }
+
+        $request->authenticate(); // This will handle the actual validation/errors if logic above falls through
 
         $request->session()->regenerate();
 
@@ -42,6 +59,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-       return redirect()->route('dashboard');
+        return redirect('/');
     }
 }
